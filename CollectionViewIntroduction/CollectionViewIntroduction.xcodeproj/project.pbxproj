@@ -79,6 +79,24 @@
 			path = MagicCardModels;
 			sourceTree = "<group>";
 		};
+		CD5614DD233C0EB600956A4C /* Views+ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD7D34F1233BC69A00D24081 /* ViewController.swift */,
+				CD5614D9233BDFB200956A4C /* MagicCardCollectionViewCell.swift */,
+			);
+			path = "Views+ViewControllers";
+			sourceTree = "<group>";
+		};
+		CD5614DE233C0ED900956A4C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD7D34EF233BC69A00D24081 /* AppDelegate.swift */,
+				CD7D34F6233BC69B00D24081 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		CD7D34E3233BC69A00D24081 = {
 			isa = PBXGroup;
 			children = (
@@ -102,12 +120,10 @@
 			isa = PBXGroup;
 			children = (
 				CD5614D8233BDF2D00956A4C /* MagicCardModels */,
-				CD7D34EF233BC69A00D24081 /* AppDelegate.swift */,
-				CD7D34F1233BC69A00D24081 /* ViewController.swift */,
-				CD7D34F3233BC69A00D24081 /* Main.storyboard */,
-				CD5614D9233BDFB200956A4C /* MagicCardCollectionViewCell.swift */,
+				CD5614DD233C0EB600956A4C /* Views+ViewControllers */,
 				CD7D3515233BCF0E00D24081 /* Networking */,
-				CD7D34F6233BC69B00D24081 /* Assets.xcassets */,
+				CD5614DE233C0ED900956A4C /* Supporting Files */,
+				CD7D34F3233BC69A00D24081 /* Main.storyboard */,
 				CD7D34F8233BC69B00D24081 /* LaunchScreen.storyboard */,
 				CD7D34FB233BC69B00D24081 /* Info.plist */,
 			);
