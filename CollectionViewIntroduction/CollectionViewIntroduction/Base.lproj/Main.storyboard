@@ -18,34 +18,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yb0-kL-Eqr">
-                                <rect key="frame" x="87" y="210" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yb0-kL-Eqr">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="58M-EV-Lpw">
-                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="itemSize" width="253" height="239"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="zd1-YJ-kXY">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="magicCardCell" id="zd1-YJ-kXY" customClass="MagicCardCollectionViewCell" customModule="CollectionViewIntroduction" customModuleProvider="target">
+                                        <rect key="frame" x="80.5" y="0.0" width="253" height="239"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="253" height="239"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L8X-Jd-19T">
+                                                    <rect key="frame" x="0.0" y="0.0" width="253" height="239"/>
+                                                </imageView>
+                                            </subviews>
                                         </view>
+                                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="L8X-Jd-19T" secondAttribute="trailing" id="Jcs-rz-cGW"/>
+                                            <constraint firstItem="L8X-Jd-19T" firstAttribute="top" secondItem="zd1-YJ-kXY" secondAttribute="top" id="TEJ-89-TLe"/>
+                                            <constraint firstItem="L8X-Jd-19T" firstAttribute="leading" secondItem="zd1-YJ-kXY" secondAttribute="leading" id="cX0-3K-mpb"/>
+                                            <constraint firstAttribute="bottom" secondItem="L8X-Jd-19T" secondAttribute="bottom" id="xjG-1u-mEv"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="cardImageView" destination="L8X-Jd-19T" id="eoK-Xi-E1j"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yb0-kL-Eqr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5zD-hV-Fvf"/>
+                            <constraint firstItem="yb0-kL-Eqr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cuR-gF-brR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yb0-kL-Eqr" secondAttribute="bottom" id="yMV-Hh-mrJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yb0-kL-Eqr" secondAttribute="trailing" id="yRz-0f-Dl9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cardsCollectionView" destination="yb0-kL-Eqr" id="wGt-cL-bcF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="132.58928571428572"/>
         </scene>
     </scenes>
 </document>

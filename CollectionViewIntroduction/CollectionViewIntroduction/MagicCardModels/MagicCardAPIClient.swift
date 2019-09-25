@@ -7,17 +7,16 @@ struct MagicCardAPIClient {
     private let urlStr = "https://api.magicthegathering.io/v1/cards?name="
     
     func getCards(matching searchTerm: String = "bolt",
-                  completionHandler: @escaping (Result<[MagicCard], AppError>) -> Void,
-                  errorHandler: @escaping (Error) -> Void) {
+                  completionHandler: @escaping (Result<[MagicCard], AppError>) -> Void) {
         guard let formattedSearchTerm = searchTerm.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else {
-            errorHandler(AppError.badURL)
+            completionHandler(.failure(.badURL))
             return
         }
         
         let fullUrlStr = urlStr + formattedSearchTerm
         
         guard let url = URL(string: fullUrlStr) else {
-            errorHandler(AppError.badURL)
+            completionHandler(.failure(.badURL))
             return
         }
         

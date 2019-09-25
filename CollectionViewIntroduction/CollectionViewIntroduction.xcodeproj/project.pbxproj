@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD5614DB233BDFB200956A4C /* MagicCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5614D9233BDFB200956A4C /* MagicCardCollectionViewCell.swift */; };
 		CD7D34F0233BC69A00D24081 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D34EF233BC69A00D24081 /* AppDelegate.swift */; };
 		CD7D34F2233BC69A00D24081 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D34F1233BC69A00D24081 /* ViewController.swift */; };
 		CD7D34F5233BC69A00D24081 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7D34F3233BC69A00D24081 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD5614D9233BDFB200956A4C /* MagicCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicCardCollectionViewCell.swift; sourceTree = "<group>"; };
 		CD7D34EC233BC69A00D24081 /* CollectionViewIntroduction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewIntroduction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7D34EF233BC69A00D24081 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD7D34F1233BC69A00D24081 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD5614D8233BDF2D00956A4C /* MagicCardModels */ = {
+			isa = PBXGroup;
+			children = (
+				CD7D3518233BD06900D24081 /* MagicCard.swift */,
+				CD7D351A233BD30400D24081 /* MagicCardAPIClient.swift */,
+			);
+			path = MagicCardModels;
+			sourceTree = "<group>";
+		};
 		CD7D34E3233BC69A00D24081 = {
 			isa = PBXGroup;
 			children = (
@@ -90,11 +101,11 @@
 		CD7D34EE233BC69A00D24081 /* CollectionViewIntroduction */ = {
 			isa = PBXGroup;
 			children = (
-				CD7D3518233BD06900D24081 /* MagicCard.swift */,
-				CD7D351A233BD30400D24081 /* MagicCardAPIClient.swift */,
+				CD5614D8233BDF2D00956A4C /* MagicCardModels */,
 				CD7D34EF233BC69A00D24081 /* AppDelegate.swift */,
 				CD7D34F1233BC69A00D24081 /* ViewController.swift */,
 				CD7D34F3233BC69A00D24081 /* Main.storyboard */,
+				CD5614D9233BDFB200956A4C /* MagicCardCollectionViewCell.swift */,
 				CD7D3515233BCF0E00D24081 /* Networking */,
 				CD7D34F6233BC69B00D24081 /* Assets.xcassets */,
 				CD7D34F8233BC69B00D24081 /* LaunchScreen.storyboard */,
@@ -226,6 +237,7 @@
 			files = (
 				CD7D3512233BC9BD00D24081 /* AppError.swift in Sources */,
 				CD7D3519233BD06900D24081 /* MagicCard.swift in Sources */,
+				CD5614DB233BDFB200956A4C /* MagicCardCollectionViewCell.swift in Sources */,
 				CD7D34F2233BC69A00D24081 /* ViewController.swift in Sources */,
 				CD7D3510233BC9A200D24081 /* NetworkHelper.swift in Sources */,
 				CD7D3514233BC9DF00D24081 /* ImageAPIClient.swift in Sources */,

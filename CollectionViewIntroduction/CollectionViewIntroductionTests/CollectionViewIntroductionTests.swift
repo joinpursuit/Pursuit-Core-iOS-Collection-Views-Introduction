@@ -15,7 +15,7 @@ class CollectionViewIntroductionTests: XCTestCase {
         
         // Assert
         
-        XCTAssertEqual(cards.count, 10)
+        XCTAssertEqual(cards.count, 75)
     }
 
     private func getTestMagicCardJSONData() -> Data {
